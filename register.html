@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="Keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="msapplication-TileImage" content="images/ico/144x144.png">
+    <meta name="msapplication-TileImage" content="images/ico/152x152.png"/>
+    <link rel="icon" type="image/vnd.microsoft.icon" href="images/ico/16x16.ico" sizes="16x16"/>
+    <link rel="icon" type="image/vnd.microsoft.icon" href="images/ico/32x32.ico" sizes="32x32"/>
+    <link rel="icon" type="image/png" href="images/ico/32x32.png" sizes="32x32"/>
+    <link rel="icon" type="image/png" href="images/ico/152x152.png" sizes="152x152"/>
+    <link rel="apple-touch-icon-precomposed" href="images/ico/152x152.png"/>
+    <link rel="apple-touch-icon" href="images/ico/57x57.png" sizes="57x57">
+    <link rel="apple-touch-icon" href="images/ico/72x72.png" sizes="72x72">
+    <link rel="apple-touch-icon" href="images/ico/114x114.png" sizes="114x114">
+    <link rel="apple-touch-icon" href="images/ico/120x120.png" sizes="120x120">
+    <link rel="apple-touch-icon" href="images/ico/144x144.png" sizes="144x144">
+    <link rel="apple-touch-icon" href="images/ico/152x152.png" sizes="152x152">
+    <link rel="ehesive" href="images/ico/index.json">
+
+    <title>starter</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!--build:css css/styles.min.css-->
+    <link rel="stylesheet" href="css/styles.css">
+    <!--endbuild-->
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen, projection"/>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/css3-mediaqueries.min.js"></script>
+    <script>
+        document.createElement('header');
+        document.createElement('nav');
+        document.createElement('main');
+        document.createElement('section');
+        document.createElement('article');
+        document.createElement('aside');
+        document.createElement('footer');
+    </script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="wrapper">
+    <header class="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="header__top-menu">
+                    <div class="container">
+                        <div class="row">
+                            <div class="header__logo col-xs-3">
+                                <a href="index.html"><img src="images/logo-br-color.png" title="Лого Classroom"
+                                                          alt="Лого Classroom"></a>
+                            </div>
+                            <div class="header__register col-xs-9 text-right">
+                                <ul>
+                                    <li class="header__register-item"><a href="login.html"
+                                                                         class="header__register-link header__register-link-enter"><img
+                                            src="images/icon-01.png" alt=""> Вход</a>
+                                    </li>
+                                    <li class="header__register-item"><a href="register.html"
+                                                                         class="header__register-link header__register-link-reg"><img
+                                            src="images/icon-02.png" alt=""> Регистрация</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__page">
+                    <div class="col-xs-12 form text-center">
+                        <form id="custom-search-form" class="form-search">
+                            <div class="input-append">
+                                <input type="text" class="search-query" placeholder="Что Вы желаете изучать?">
+                                <button type="submit" class="btn">Найти <i class="fa fa-search"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="header__menu" id="header__top-menu">
+            <a href="#" id="mobile">Меню</a>
+            <ul class="top-menu">
+                <li class="header__menu-item"><a href="page.html" class="header__menu-link">Репетиторы</a></li>
+                <li class="header__menu-item"><a href="page.html" class="header__menu-link">Инструкторы</a></li>
+                <li class="header__menu-item"><a href="page.html" class="header__menu-link">Тренеры</a></li>
+                <li class="header__menu-item"><a href="page.html" class="header__menu-link">Няни</a></li>
+                <li class="header__menu-item"><a href="page.html" class="header__menu-link">Логопеды</a></li>
+                <li class="header__menu-item"><a href="page.html" class="header__menu-link">Блоги</a></li>
+                <li class="header__menu-item"><a href="page.html" class="header__menu-link">Форум</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+
+        <div class="container">
+            <div class="row">
+                <h2 class="text-center">Регистрация ученика</h2>
+                <div class="col-xs-12 main__about main__about-block">
+                    <div class="col-xs-12 col-sm-12 col-md-12 main__about-description login-form register-form">
+                        <div class="fields">
+
+                            <form method="post" action="" name="bform">
+                                <input type="hidden" name="backurl" value="/login/">
+                                <input type="hidden" name="AUTH_FORM" value="Y">
+                                <input type="hidden" name="TYPE" value="REGISTRATION">
+                                <div class="field">
+                                    <label class="field-title" for="USER_NAME">Имя</label>
+                                    <div class="form-input"><input type="text" id="USER_NAME" name="USER_NAME"
+                                                                   autocomplete="off"
+                                                                   maxlength="50" placeholder="Ваше имя"></div>
+                                </div>
+                                <div class="field">
+                                    <label class="field-title" for="USER_LAST_NAME">Фамилия</label>
+                                    <div class="form-input"><input type="text" id="USER_LAST_NAME" name="USER_LAST_NAME"
+                                                                   autocomplete="off"
+                                                                   maxlength="50" placeholder="Ваша фамилия"></div>
+                                </div>
+                                <div class="field">
+                                    <label class="field-title" for="USER_LOGIN_P">Логин</label>
+                                    <div class="form-input"><input type="text" id="USER_LOGIN_P" name="USER_LOGIN_P"
+                                                                   maxlength="50" autocomplete="off"
+                                                                   placeholder="Логин должен быть не менее 3 символов.">
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <label class="field-title" for="USER_PASSWORD_P">Пароль<span
+                                            class="starrequired">*</span></label>
+                                    <div class="form-input"><input type="password" id="USER_PASSWORD_P"
+                                                                   autocomplete="off"
+                                                                   name="USER_PASSWORD" maxlength="50"
+                                                                   placeholder="Пароль должен быть не менее 6 символов длиной.">
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <label class="field-title" for="USER_CONFIRM_PASSWORD_P">Подтверждение
+                                        пароля</label>
+                                    <div class="form-input"><input type="password" id="USER_CONFIRM_PASSWORD_P"
+                                                                   autocomplete="off"
+                                                                   name="USER_CONFIRM_PASSWORD" maxlength="50"
+                                                                   placeholder="Повторите Ваш пароль"></div>
+                                </div>
+                                <div class="field">
+                                    <label class="field-title" for="USER_EMAIL_P">E-Mail</label>
+                                    <div class="form-input"><input type="text" id="USER_EMAIL_P" name="USER_EMAIL_P"
+                                                                   autocomplete="off"
+                                                                   maxlength="255" placeholder="Введите Ваш e-mail">
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <label class="field-title" for="captcha">Код на картинке</label>
+                                    <div class="form-input"><input type="text" id="captcha" name="captcha_word"
+                                                                   maxlength="50" placeholder="Введите код с картинки">
+                                        <div style="margin-top:-10px;margin-right:-15px;">
+                                            <img src="images/captcha.jpg" width="180" height="40" alt="CAPTCHA"></div>
+                                    </div>
+                                </div>
+
+                                <div class="field field-button text-center field-button-block">
+                                    <input type="submit" class="input-submit main__info-block-button" name="Register"
+                                           value="Зарегистрироваться как ученик">
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="text-center">Регистрация репетитора</h2>
+                <div class="col-xs-12 main__about main__about-block">
+                    <div class="col-xs-12 col-sm-12 col-md-12 main__about-description login-form register-form">
+                        <div class="fields">
+
+                            <form method="post" action="" name="regform">
+
+                                <div class="field">
+                                    <label class="field-title" for="REGISTER">Логин</label>
+                                    <div class="form-input">
+                                        <input size="30" type="text" id="REGISTER" name="REGISTER[LOGIN]"
+                                               autocomplete="off" placeholder="Логин должен быть минимум 3 символа">
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <label class="field-title" for="PASSWORD">Пароль</label>
+                                    <div class="form-input">
+                                        <input size="30" type="password" id="PASSWORD" name="REGISTER[PASSWORD]"
+                                               autocomplete="off" class="bx-auth-input"
+                                               placeholder="Пароль должен быть не менее 6 символов длиной.">
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <label class="field-title" for="CONFIRM_PASSWORD">Подтверждение пароля</label>
+                                    <div class="form-input">
+                                        <input size="30" type="password" id="CONFIRM_PASSWORD"
+                                               name="REGISTER[CONFIRM_PASSWORD]" autocomplete="off"
+                                               placeholder="Повторите Ваш пароль">
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <label class="field-title" for="EMAIL">E-mail</label>
+                                    <div class="form-input">
+                                        <input size="30" type="text" id="EMAIL" name="REGISTER[EMAIL]"
+                                               autocomplete="off" placeholder="Введите Ваш e-mail">
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <label class="field-title" for="NAME">Имя</label>
+                                    <div class="form-input">
+                                        <input size="30" type="text" id="NAME" name="REGISTER[NAME]" autocomplete="off"
+                                               placeholder="Имя">
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <label class="field-title" for="LAST_NAME">Фамилия</label>
+                                    <div class="form-input">
+                                        <input size="30" type="text" id="LAST_NAME" name="REGISTER[LAST_NAME]"
+                                               autocomplete="off" placeholder="Фамилия">
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <label class="field-title" for="PERSONAL_BIRTHDAY">Дата рождения</label>
+                                    <div class="form-input">
+                                        <input size="30" type="text" id="PERSONAL_BIRTHDAY"
+                                               name="REGISTER[PERSONAL_BIRTHDAY]" autocomplete="off"
+                                               placeholder="Дата рождения"></div>
+                                </div>
+                                <div class="field">
+                                    <label class="field-title" for="UF_TYPE_USER">Тип регистрации</label>
+                                    <div class="form-input">
+                                        <select id="UF_TYPE_USER" class="bx-user-field-enum" name="UF_TYPE_USER">
+                                            <option value="8" selected="">Выберите одно из значений</option>
+                                            <option value="3">Репетитор</option>
+                                            <option value="4">Тренер</option>
+                                            <option value="6">Инструктор</option>
+                                            <option value="5">Няня</option>
+                                            <option value="7">Логопед</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="field">
+                                    <label class="field-title" for="captcha_word">Введите слово на картинке</label>
+                                    <div class="form-input">
+                                        <input type="text" id="captcha_word" name="captcha_word" maxlength="50" value=""
+                                               placeholder="Введите код с картинки">
+                                        <div style="margin-top:-10px;margin-right:-15px;">
+                                            <img src="images/captcha.jpg" width="180" height="40" alt="CAPTCHA">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="field field-button text-center field-button-block">
+                                    <input type="submit" class="input-submit main__info-block-button" name="register_submit_button" value="Зарегистрироваться как репетитор">
+                                </div>
+
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 no-padding-left no-padding-right footer__menu">
+                            <div class="col-xs-12 col-sm-12 col-md-3 footer__logo footer__social">
+                                <a href="index.html"><img src="images/logo-br-color.png" title="Лого Classroom"
+                                                          alt="Лого Classroom"></a>
+                                <a href=""><i class="fa fa-vk"></i></a>
+                                <a href=""><i class="fa fa-google-plus"></i></a>
+                                <a href=""><i class="fa fa-instagram"></i></a>
+                                <a href=""><i class="fa fa-facebook"></i></a>
+                            </div>
+                            <div class="col-xs-4 col-sm-4 col-md-3 footer__info-block footer__top-menu">
+                                <h3>Информация</h3>
+                                <ul>
+                                    <li><a href="">О сайте</a></li>
+                                    <li><a href="">Правила</a></li>
+                                    <li><a href="">Помощь</a></li>
+                                    <li><a href="">Соглашение</a></li>
+                                    <li><a href="">Конфиденциальность</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-4 col-sm-4 col-md-3 footer__info-block footer__top-menu">
+                                <h3>Разделы</h3>
+                                <ul>
+                                    <li><a href="">Репетиторы</a></li>
+                                    <li><a href="">Инструкторы</a></li>
+                                    <li><a href="">Тренеры</a></li>
+                                    <li><a href="">Няни</a></li>
+                                    <li><a href="">Логопеды</a></li>
+                                    <li><a href="">Блоги</a></li>
+                                    <li><a href="">Форум</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-4 col-sm-4 col-md-3 footer__info-block footer__top-menu">
+                                <h3>Аккаунт</h3>
+                                <ul>
+                                    <li><a href="">Войти</a></li>
+                                    <li><a href="">Регистрация</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 footer__item__inner">
+                            <div class="f-tags">
+
+                                <div class="f-tags__item col-xs-12 col-sm-6 col-md-3 footer__info-block footer__menu">
+                                    <h3>Популярные темы</h3>
+                                    <a class="f-tags__item__tag" href="">Репетиторы математики</a>
+                                    <a class="f-tags__item__tag" href="">Репетиторы алгебры</a>
+                                    <a class="f-tags__item__tag" href="">Репетиторы биологии</a>
+                                    <a class="f-tags__item__tag" href="">Репетиторы химии</a>
+                                    <a class="f-tags__item__tag" href="">Репетиторы физики</a>
+                                </div>
+                                <div class="f-tags__item col-xs-12 col-sm-6 col-md-3 footer__info-block footer__menu">
+                                    <h3>Носители языка</h3>
+                                    <a class="f-tags__item__tag" href="">Los Angeles</a>
+                                    <a class="f-tags__item__tag" href="">Sydney</a>
+                                    <a class="f-tags__item__tag" href="">Vancouver</a>
+                                    <a class="f-tags__item__tag" href="">London</a>
+                                    <a class="f-tags__item__tag" href="">Toronto</a>
+                                    <a class="f-tags__item__tag" href="">New York City</a>
+                                    <a class="f-tags__item__tag" href="">Liverpool</a>
+                                    <a class="f-tags__item__tag" href="">English native speakers</a>
+                                </div>
+                                <div class="f-tags__item col-xs-12 col-sm-6 col-md-3 footer__info-block footer__menu">
+                                    <h3>Популярные языки</h3>
+                                    <a class="f-tags__item__tag" href="">Английский</a>
+                                    <a class="f-tags__item__tag" href="">Немецкий</a>
+                                    <a class="f-tags__item__tag" href="">Русский</a>
+                                    <a class="f-tags__item__tag" href="">Французкий</a>
+                                    <a class="f-tags__item__tag" href="">Испанский</a>
+                                    <a class="f-tags__item__tag" href="">Китайский</a>
+                                    <a class="f-tags__item__tag" href="">Японский</a>
+                                    <a class="f-tags__item__tag" href="">Португальский</a>
+                                    <a class="f-tags__item__tag" href="">Польский</a>
+                                    <a class="f-tags__item__tag" href="">Арабский</a>
+                                    <a class="f-tags__item__tag" href="">Итальянский</a>
+                                </div>
+                                <div class="f-tags__item col-xs-12 col-sm-6 col-md-3 footer__info-block footer__menu">
+                                    <h3>Популярные тесты</h3>
+                                    <a class="f-tags__item__tag" href="">FCE</a>
+                                    <a class="f-tags__item__tag" href="">HSK</a>
+                                    <a class="f-tags__item__tag" href="">BEC</a>
+                                    <a class="f-tags__item__tag" href="">DELE</a>
+                                    <a class="f-tags__item__tag" href="">TOEFL</a>
+                                    <a class="f-tags__item__tag" href="">DELF</a>
+                                    <a class="f-tags__item__tag" href="">GMAT</a>
+                                    <a class="f-tags__item__tag" href="">IELTS</a>
+                                    <a class="f-tags__item__tag" href="">DALF</a>
+                                    <a class="f-tags__item__tag" href="">TestDaF</a>
+                                </div>
+
+                            </div>
+                            <div class="f-tags-pager">
+                                <div class="f-tags-pager__item active"></div>
+                                <div class="f-tags-pager__item"></div>
+                                <div class="f-tags-pager__item"></div>
+                                <div class="f-tags-pager__item"></div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 footer__item-inner">
+                            <div class="col-xs-12 text-center">
+                                <div class="footer__menu  footer__copy__docs">
+                                    <a href="">Условия использования</a> -
+                                    <a href="">Политика конфиденциальности</a>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 footer__copy text-center">
+                                <p class="footer__menu footer__copyright">ClassRoom &copy; 2017-2018. Разработка <a
+                                        href="https://xwork.site">xWork</a>.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a id="back-to-top" class="back-to-top"><i class="fa fa-arrow-up"></i></a>
+</div>
+
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.jcarousel.min.js"></script>
+<script src="js/jquery.matchHeight.min.js"></script>
+<!--build:js js/main.min.js -->
+<script src="js/script.js"></script>
+<!-- endbuild -->
+</body>
+
+</html>

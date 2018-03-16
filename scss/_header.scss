@@ -1,0 +1,255 @@
+/*!
+ * Header content
+ */
+.header {
+  position: relative;
+
+  &__logo {
+    @media screen and (max-width: 499px) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  &__register {
+    text-align: right;
+
+    @media screen and (max-width: 499px) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  & ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    & li {
+      display: inline-block;
+    }
+  }
+
+  &__page {
+    background: url("../images/tutor.jpg") center top no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    justify-content: space-evenly;
+    display: flex;
+    min-height: 300px;
+  }
+
+  &__search {
+    background: url("../images/bg-top.jpg") center top no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    justify-content: space-evenly;
+    display: flex;
+    min-height: 600px;
+
+    @media screen and (max-width: 499px) {
+      min-height: 300px
+    }
+
+    & .titles {
+      //margin-top: 8%;
+      @media screen and (max-width: 499px) {
+        display: none;
+      }
+
+      &-left {
+        text-align: right;
+
+        @media screen and (max-width: 991px) {
+          text-align: center;
+          width: 100%;
+        }
+      }
+
+      &-right {
+        @media screen and (max-width: 991px) {
+          text-align: center;
+          width: 100%;
+        }
+      }
+
+      & h2 {
+        font-family: Arial, sans-serif;
+        color: $green;
+        text-transform: uppercase;
+        font-size: 46px;
+        font-weight: 700;
+
+        @media screen and (max-width: 1139px) {
+          font-size: 40px;
+        }
+        @media screen and (max-width: 991px) {
+          font-size: 30px;
+        }
+      }
+      & h2 b {
+        font-size: 76px;
+
+        @media screen and (max-width: 1139px) {
+          font-size: 70px;
+        }
+        @media screen and (max-width: 991px) {
+          font-size: 50px;
+        }
+      }
+      & h3 {
+        font-size: 40px;
+        line-height: 34px;
+
+        @media screen and (max-width: 1139px) {
+          font-size: 34px;
+          line-height: 30px;
+        }
+
+        @media screen and (max-width: 991px) {
+          font-size: 28px;
+          line-height: 20px;
+        }
+      }
+    }
+
+  }
+
+  &__top-menu {
+    height: 42px;
+    line-height: 40px;
+    background-color: rgba(255, 255, 255, 0.7);
+
+    @media screen and (max-width: 499px) {
+      height: auto;
+    }
+
+    & ul {
+      text-transform: uppercase;
+
+      & li {
+
+        & a {
+          padding-left: 20px;
+          color: $black;
+
+          &:hover {
+            text-decoration: none;
+            color: $green;
+          }
+        }
+      }
+    }
+  }
+  &__menu {
+    //height: 64px;
+    background-color: rgba(18, 152, 160, 0.7);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: fit-content;
+
+    & ul {
+      text-align: center;
+
+      & li {
+
+        & a {
+          color: white;
+          font-size: 20px;
+          font-weight: 400;
+          text-transform: uppercase;
+          padding: 0 20px;
+          line-height: 64px;
+          display: inline-block;
+
+          &:hover {
+            text-decoration: none;
+            background-color: rgba(18, 152, 160, 0.7);
+          }
+        }
+      }
+    }
+  }
+}
+
+.form-search {
+  margin-bottom: 30px;
+
+  & .input-append {
+    width: 100%;
+    max-width: 730px;
+    height: 64px;
+    position: relative;
+    margin: 0 auto;
+
+    @media screen and (max-width: 767px) {
+      padding: 0;
+    }
+  }
+
+  & input {
+    width: 100%;
+    height: 100%;
+    font-variant: small-caps;
+    background-color: $white;
+    box-shadow: 0 1px 12px rgba(47, 47, 47, 0.25);
+    border: 0;
+    padding-left: 30px;
+  }
+  & button {
+    width: 180px;
+    height: 64px;
+    background-color: rgba(18, 152, 160, 0.9);
+    border-radius: 0;
+    color: $white;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 18px;
+    text-transform: uppercase;
+
+    & i {
+      margin-left: 20px;
+    }
+  }
+}
+
+nav a#mobile {
+  display: none;
+}
+
+@media only screen and (max-width : 991px) {
+  nav {
+    border-bottom: 0;
+  }
+  nav ul {
+    display: none;
+    height: auto;
+  }
+  nav a#mobile {
+    display: block;
+    background-color: $grey;
+    width: 100%;
+    position: relative;
+    height: 64px;
+    z-index: 9;
+    color: $white;
+    padding-left: 20px;
+    line-height: 64px;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  nav a#mobile:after {
+    content:"";
+    background: url('../images/nav-icon.png') no-repeat;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    top: 18px;
+  }
+}
+

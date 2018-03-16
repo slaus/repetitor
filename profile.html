@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="Keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="msapplication-TileImage" content="images/ico/144x144.png">
+    <meta name="msapplication-TileImage" content="images/ico/152x152.png"/>
+    <link rel="icon" type="image/vnd.microsoft.icon" href="images/ico/16x16.ico" sizes="16x16"/>
+    <link rel="icon" type="image/vnd.microsoft.icon" href="images/ico/32x32.ico" sizes="32x32"/>
+    <link rel="icon" type="image/png" href="images/ico/32x32.png" sizes="32x32"/>
+    <link rel="icon" type="image/png" href="images/ico/152x152.png" sizes="152x152"/>
+    <link rel="apple-touch-icon-precomposed" href="images/ico/152x152.png"/>
+    <link rel="apple-touch-icon" href="images/ico/57x57.png" sizes="57x57">
+    <link rel="apple-touch-icon" href="images/ico/72x72.png" sizes="72x72">
+    <link rel="apple-touch-icon" href="images/ico/114x114.png" sizes="114x114">
+    <link rel="apple-touch-icon" href="images/ico/120x120.png" sizes="120x120">
+    <link rel="apple-touch-icon" href="images/ico/144x144.png" sizes="144x144">
+    <link rel="apple-touch-icon" href="images/ico/152x152.png" sizes="152x152">
+    <link rel="ehesive" href="images/ico/index.json">
+
+    <title>starter</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!--build:css css/styles.min.css-->
+    <link rel="stylesheet" href="css/styles.css">
+    <!--endbuild-->
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen, projection"/>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/css3-mediaqueries.min.js"></script>
+    <script>
+        document.createElement('header');
+        document.createElement('nav');
+        document.createElement('main');
+        document.createElement('section');
+        document.createElement('article');
+        document.createElement('aside');
+        document.createElement('footer');
+    </script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="wrapper">
+    <header class="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="header__top-menu">
+                    <div class="container">
+                        <div class="row">
+                            <div class="header__logo col-xs-3">
+                                <a href="index.html"><img src="images/logo-br-color.png" title="Лого Classroom"
+                                                          alt="Лого Classroom"></a>
+                            </div>
+                            <div class="header__register col-xs-9 text-right">
+                                <ul>
+                                    <li class="header__register-item"><a href="login.html"
+                                                                         class="header__register-link header__register-link-enter"><img
+                                            src="images/icon-01.png" alt=""> Вход</a>
+                                    </li>
+                                    <li class="header__register-item"><a href="register.html"
+                                                                         class="header__register-link header__register-link-reg"><img
+                                            src="images/icon-02.png" alt=""> Регистрация</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__page">
+                    <div class="col-xs-12 form text-center">
+                        <form id="custom-search-form" class="form-search">
+                            <div class="input-append">
+                                <input type="text" class="search-query" placeholder="Что Вы желаете изучать?">
+                                <button type="submit" class="btn">Найти <i class="fa fa-search"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="header__menu" id="header__top-menu">
+            <a href="#" id="mobile">Меню</a>
+            <ul class="top-menu">
+                <li class="header__menu-item"><a href="page.html" class="header__menu-link">Репетиторы</a></li>
+                <li class="header__menu-item"><a href="page.html" class="header__menu-link">Инструкторы</a></li>
+                <li class="header__menu-item"><a href="page.html" class="header__menu-link">Тренеры</a></li>
+                <li class="header__menu-item"><a href="page.html" class="header__menu-link">Няни</a></li>
+                <li class="header__menu-item"><a href="page.html" class="header__menu-link">Логопеды</a></li>
+                <li class="header__menu-item"><a href="page.html" class="header__menu-link">Блоги</a></li>
+                <li class="header__menu-item"><a href="page.html" class="header__menu-link">Форум</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2 class="text-center">Профиль участника портала Classroom</h2>
+
+                    <div class="col-xs-12 no-padding-left no-padding-right">
+
+                        <div class="col-xs-5 col-sm-5 col-md-4 no-padding-left main__profile main__profile-left">
+                            <div class="col-xs-12 relative section no-padding-right no-padding-left padding-bottom same-column">
+                                <img src="images/img-04.jpg" class="img-responsive padding-bottom" alt="">
+                                <h4 class="main__info-title">Прохорова Алевтина Ярославовна</h4>
+                                <div class="main__info main__info-block flex">
+                                    <img src="images/icon-08.png" alt="">
+                                    <span>
+                                        <select name="PERSONAL_COUNTRY" id="personal-country">
+                                            <option value="no">Выбрать занятость</option>
+                                            <option value="1285">Свободен</option>
+                                            <option value="1290">Занят</option>
+                                        </select>
+                                    </span>
+                                </div>
+                                <h4 class="main__info-title">Специализация</h4>
+                                <div class="main__info main__info-block flex">
+                                    <img src="images/icon-09.png" alt="">
+                                    <span>
+                                        Русский язык<br>
+                                        Китайский язык<br>
+                                        Греческий язык
+                                    </span>
+                                </div>
+                                <h4 class="main__info-title">Рейтинг</h4>
+                                <div class="main__info main__info-block flex">
+                                    <img src="images/icon-10.png" alt="">
+                                    <span>Текущий рейтинг <a href="">60</a></span>
+                                </div>
+                                <div class="main__info main__info-block flex">
+                                    <img src="images/icon-11.png" alt="">
+                                    <span>
+                                        Положительные отзывы <a href="">30</a><br>
+                                        Отрицательные отзывы <a href="">0</a>
+                                    </span>
+                                </div>
+                                <div class="main__info main__info-block flex">
+                                    <img src="images/icon-12.png" alt="">
+                                    <span>В избранном у <a href="">3</a></span>
+                                </div>
+                                <h4 class="main__info-title">Местоположение</h4>
+                                <div class="main__info main__info-block flex">
+                                    <img src="images/icon-13.png" alt="">
+                                    <span>Россия, Екатеринбург</span>
+                                </div>
+                                <h4 class="main__info-title">Возраст и опыт</h4>
+                                <div class="main__info main__info-block flex">
+                                    <img src="images/icon-14.png" alt="">
+                                    <span>
+                                        Возраст: 35 лет<br>
+                                        Опыт: 6 лет 3 месяца<br>
+                                        На сайте: 7 месяцев<br>
+                                        Заходил: сейчас на сайте
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-7 col-sm-7 col-md-8 no-padding-right main__profile main__profile-right">
+                            <div class="col-xs-12 main__info relative section same-column padding-bottom">
+
+                                <ul class="nav nav-tabs">
+                                    <li class="active"><a data-toggle="tab" href="#panel1">Резюме</a></li>
+                                    <li><a data-toggle="tab" href="#panel2">Заказы</a></li>
+                                    <li><a data-toggle="tab" href="#panel3">Отзывы</a></li>
+                                    <li><a data-toggle="tab" href="#panel4">Вопросы</a></li>
+                                </ul>
+
+                                <div class="tab-content">
+                                    <div id="panel1" class="tab-pane fade padding-top in active">
+                                        <h4 class="main__info-title">Социальные сети</h4>
+                                        <div class="main__info main__info-block flex">
+                                            <img src="images/icon-06.png" alt="">
+                                            <span>
+                                                <a href="">Twitter.com</a><br>
+                                                <a href="">Facebook.com</a>
+                                            </span>
+                                        </div>
+                                        <h4 class="main__info-title">Пару фраз обо мне</h4>
+                                        <p>
+                                            Женщина, 27 лет, родилась 3 ноября 1990<br>
+                                            Москва, не готова к переезду, готова к командировкам
+                                        </p>
+                                        <p>
+                                            Репетитор английского языка<br>
+                                            Наука, образование<br>
+                                            Языки<br>
+                                            Преподавание<br>
+                                            Занятость: частичная занятость, полная занятость
+                                        </p>
+                                        <p>
+                                            График работы: гибкий график, полный день, сменный график
+                                        </p>
+                                        <p>
+                                            Опыт работы 7 лет 1 месяц<br>
+                                            Май 2012 — по настоящее время<br>
+                                            5 лет 11 месяцев<br>
+                                            Частная лица<br>
+                                            Москва
+                                        </p>
+                                        <p>
+                                            Репетитор английского языка<br>
+                                            Обеспечение и координация академической помощи детям. Преподавание
+                                            английского языка
+                                            таким образом, который подходит каждому ребенку и использование методах,
+                                            которые
+                                            ребенку нравится.<br>
+                                            Обучение ребенка, дающий ему/ей хороший старт, широкий словарный запас и
+                                            большую
+                                            способность выразить свои мысли на английском языке.<br>
+                                            Сентябрь 2012 — июнь 2014<br>
+                                            1 год 10 месяцев<br>
+                                            Языковая школа Divelang - Москва<br>
+                                            Образовательные учреждения
+                                        </p>
+                                        <p>
+                                            Обучение иностранным языкам<br>
+                                            Преподаватель английского языка<br>
+                                            Преподавание английского языка детям в группах и индивидуальные занятия.<br>
+                                            Преподавание таким образом который подходит для каждого ребенка.<br>
+                                            Создание атмосферы, которая идеально подходит для образования в сочетании
+                                            специальных программ для конкретного возраста ребенка.<br>
+                                            Помочь каждому ребенку развить свой собственный потенциал.<br>
+                                            Октябрь 2012 — май 2013<br>
+                                            8 месяцев
+                                        </p>
+                                    </div>
+                                    <div id="panel2" class="tab-pane fade padding-top">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab dignissimos provident quos. Cum dolorum eaque libero magni quaerat? Amet autem beatae consequuntur doloremque dolores ipsa laudantium, libero, minima nulla officia perferendis quas quasi quisquam quos repudiandae saepe sequi tenetur. Ab error excepturi hic impedit incidunt, molestiae nulla odit omnis quisquam rem rerum soluta voluptas voluptatibus? Accusamus alias commodi consequatur dolor dolore ea explicabo ipsam laboriosam maiores nobis nulla, numquam repellendus ullam veritatis voluptatem. Autem deleniti distinctio dolorem dolores id in iste itaque magni necessitatibus, nemo omnis possimus quasi quod recusandae repellat tenetur voluptas! Consequatur magnam natus numquam optio quod rem similique tempore unde veritatis voluptatem? Dolores est repellat voluptate! A accusamus aliquid asperiores, autem, corporis cumque debitis dolor illo in ipsam ipsum, laudantium magnam mollitia natus nisi nobis non possimus quaerat quidem quod reprehenderit rerum soluta suscipit. Architecto autem eaque esse illo incidunt inventore iusto minima nesciunt, nulla obcaecati odio sapiente, ullam! Beatae id, labore odio perferendis quam reiciendis repellendus! Aspernatur eligendi est expedita explicabo harum, in ipsam labore molestias nulla odio repellat, repudiandae suscipit temporibus? Alias corporis dicta distinctio ducimus eaque fuga hic impedit inventore iste, labore laudantium obcaecati quas quibusdam quos repellat sint, suscipit veniam veritatis? Assumenda blanditiis, consectetur consequuntur corporis dolorem eaque est excepturi illum inventore laborum, magnam porro provident qui quisquam recusandae repudiandae, vero voluptatem voluptates. Accusantium consequuntur dignissimos doloribus est et, fuga illum inventore porro rem repudiandae rerum suscipit vitae voluptatibus? Assumenda, deserunt, eos. Beatae eaque fugiat, illo impedit in non voluptatum! Architecto doloribus, ducimus earum esse fugit illo incidunt iusto maiores nam, obcaecati perferendis placeat sed sunt suscipit veniam. Commodi cupiditate dolore et expedita facilis iusto molestiae placeat possimus? Accusantium aliquid commodi consequatur doloribus ducimus enim esse exercitationem fugit laborum libero minus natus necessitatibus, neque nulla numquam odio, omnis pariatur possimus quisquam reiciendis repellendus ullam velit? Aperiam aut, cum cumque, deserunt dignissimos dolor dolores eligendi eos error esse expedita libero modi molestiae nemo nostrum obcaecati, officiis quia sint sit temporibus tenetur veritatis vitae voluptatem voluptatibus voluptatum. Accusantium adipisci animi aperiam at consectetur, dolor doloribus eum facere fugit harum illum ipsum iste, itaque libero maxime nam, obcaecati odit perspiciatis ratione saepe tenetur totam voluptas? Aliquam, beatae deserunt distinctio doloribus excepturi illum laudantium magnam nesciunt officiis, quaerat quos, ratione repudiandae temporibus velit voluptate. Amet dignissimos expedita facilis ipsum maiores maxime nulla perferendis perspiciatis voluptatem, voluptatibus. Aperiam at deleniti dignissimos dolorem dolores enim eveniet exercitationem expedita fugiat impedit ipsa libero maxime non placeat reiciendis reprehenderit, saepe similique suscipit tempora ullam vero voluptates voluptatibus. Deleniti doloribus est ipsam itaque, mollitia nobis odit recusandae vero. A architecto assumenda atque consectetur dicta distinctio dolores doloribus dolorum ducimus ea eaque enim et eveniet fugiat in magnam, magni minus modi obcaecati, officiis porro praesentium quasi recusandae repellat sed ullam unde vero. Commodi corporis deserunt dolor dolores eligendi fugit id, impedit ipsam, maxime, minima porro qui. Accusantium aut beatae, consequatur doloremque eaque eligendi est iusto, molestiae ratione reiciendis repudiandae saepe ut voluptatibus. Dolores explicabo maxime molestias nostrum obcaecati omnis possimus similique ullam vero.</p>
+                                    </div>
+                                    <div id="panel3" class="tab-pane fade padding-top">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, ipsum, nulla! Consequatur doloremque eligendi iure iusto necessitatibus placeat reprehenderit suscipit ut velit? Dolorem doloremque, dolores eius error et fugit, ipsam molestias necessitatibus odit perferendis possimus quidem quo repellat saepe sunt tempora veniam, vitae? Animi culpa dolorem pariatur porro quam quas quasi? Animi aspernatur delectus deleniti dignissimos ea, earum eligendi est explicabo, impedit labore, neque nisi nobis numquam obcaecati omnis quas qui sapiente soluta unde veritatis? Accusamus architecto, aspernatur commodi dignissimos eum facere facilis iure minus modi necessitatibus nulla repellendus, tempora velit. Cupiditate, doloremque unde? Amet at atque consectetur delectus est exercitationem hic id illum incidunt ipsa, minus mollitia natus pariatur, perspiciatis praesentium quaerat qui rerum? Accusantium delectus doloribus exercitationem mollitia nihil quae quasi reprehenderit? Aspernatur corporis delectus dolorum illo iure minima, nesciunt non sint sunt voluptatem. Ducimus excepturi, exercitationem inventore laborum minus nemo optio perferendis praesentium quam quisquam, repudiandae sequi ut. Asperiores aut earum et harum quisquam repudiandae temporibus vero voluptatibus? Adipisci architecto corporis debitis inventore, iste maiores nemo obcaecati quis voluptas voluptatem. Adipisci amet blanditiis cumque deserunt enim exercitationem, harum illo nulla numquam possimus recusandae soluta, tempore temporibus ullam voluptatem. A dolores eveniet fuga illo iure omnis possimus quam tempora! Ad, adipisci architecto autem, debitis incidunt ipsam iusto, modi mollitia nisi placeat totam unde! Cum, facere, tenetur? A accusantium dolorem magnam maiores minima molestiae, nam numquam pariatur soluta voluptatum. Ad asperiores commodi, consequatur cumque earum est labore modi nisi, officia, porro quaerat quibusdam quos sit vel velit. Autem blanditiis dolore ipsam labore necessitatibus, provident recusandae sed ullam veritatis voluptate. Aspernatur autem corporis deleniti deserunt doloremque expedita fuga magnam, maiores minima minus molestiae mollitia quidem tenetur voluptates, voluptatibus. Aliquam cum cumque dolorum hic illo iure labore, laudantium mollitia, nesciunt qui quisquam tempora ullam vel veritatis, voluptatibus? Blanditiis corporis dignissimos dolorem error ex excepturi explicabo facere in modi, nam numquam qui quod similique temporibus voluptatem? Aspernatur eos fugiat illum iste iure, possimus saepe suscipit veritatis voluptatum? Delectus, illum, optio! Atque consequuntur eaque est ex fugiat in labore magni nesciunt non sit? Accusamus ad at consequuntur, dolore earum, eum facere ipsam nemo odit quidem rem repudiandae, vitae. Excepturi, ratione veritatis. Dolorem impedit magnam numquam quam sed vero voluptatibus. Amet harum nihil officiis, rerum unde veritatis. Accusamus aspernatur debitis nam quae, quis quos? Aliquam blanditiis ducimus et magni necessitatibus officia repudiandae voluptate. Ad architecto commodi corporis, doloremque doloribus hic illum labore officiis praesentium recusandae repudiandae voluptatem voluptatum. At consectetur cumque debitis dolorem dolores ducimus enim, facere id, illo inventore iste, magni maxime natus optio pariatur repudiandae rerum voluptatum! Ad id libero nesciunt nostrum odit quo tenetur totam velit! Atque beatae, delectus doloremque dolorum eaque eveniet illum in inventore ipsam, iste itaque labore molestiae, repudiandae suscipit ullam ut veniam veritatis vero. Assumenda cumque distinctio dolorem doloribus eligendi facere harum illum incidunt inventore iusto laborum magnam magni minus molestias mollitia natus nemo perspiciatis praesentium quaerat qui quia quidem ullam unde, vero voluptatum. Earum fugiat illum laborum numquam quas, quisquam recusandae repellendus sequi, suscipit, tempore unde?</p>
+                                    </div>
+                                    <div id="panel4" class="tab-pane fade padding-top">
+                                        <div class="main__info main__info-block flex">
+                                            <img src="images/icon-15.png" alt="">
+                                            <span>
+                                                <textarea name="" id="" cols="30" rows="10" style="width: 100%;"></textarea>
+                                            </span>
+                                        </div>
+                                        <div class="main__info-block flex no-icons">
+                                            <button type="submit" class="main__info-block-button">Задать вопрос</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                    <h2 class="text-center">История успеха на портале Classroom</h2>
+
+                    <div class="section col-xs-12 no-padding-left no-padding-right flex">
+                        <div class="col-xs-12 col-md-8 main__info relative">
+                            <h4 class="main__info-title">Если вы являетесь преподавателем, вы можете начать
+                                заниматься репетиторством зарегистрировавшись на портале
+                                Classroom. </h4>
+                            <div class="main__info-block flex">
+                                <img src="images/icon-07.png" alt="">
+                                <span>Монетизируйте свои знания и умения занимаясь репетиторством.</span>
+                            </div>
+                            <div class="main__info-block flex">
+                                <img src="images/icon-06.png" alt="">
+                                <span>Расширяйте горизонты своего профессионального влияния.</span>
+                            </div>
+                            <div class="main__info-block flex">
+                                <img src="images/icon-08.png" alt="">
+                                <span>Создайте свой онлайн бизнес без вложений.</span>
+                            </div>
+                            <div class="main__info-block flex no-icons">
+                                <button type="submit" class="main__info-block-button">Стать онлайн репетитором</button>
+                            </div>
+                            <div class="col-xs-12 col-md-4 main__icon main__icon-05 absolute"></div>
+                        </div>
+                        <div class="col-xs-12 col-md-4 main__pict main__pict-04"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid main__best">
+            <div class="row">
+                <div class="container">
+                    <div class="row">
+                        <h2 class="text-center">Лучшее репетиторы</h2>
+
+                        <div class="jcarousel-wrapper">
+                            <div class="jcarousel best">
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <img src="images/image-1.jpg" class="photo" alt="">
+                                            <h4 class="text-center">Алена Силаева</h4>
+                                            <p>Преподователь английского языка</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="images/image-1.jpg" class="photo" alt="">
+                                            <h4 class="text-center">Алена Силаева</h4>
+                                            <p>Преподователь английского языка</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="images/image-1.jpg" class="photo" alt="">
+                                            <h4 class="text-center">Алена Силаева</h4>
+                                            <p>Преподователь английского языка</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="images/image-1.jpg" class="photo" alt="">
+                                            <h4 class="text-center">Алена Силаева</h4>
+                                            <p>Преподователь английского языка</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <a href="#" class="jcarousel-control-prev"></a>
+                            <a href="#" class="jcarousel-control-next"></a>
+
+                            <p class="jcarousel-pagination"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 main__about">
+                    <div class="col-xs-12 text-center">
+                        <h3>Подпишись на новости портала репетиторов Classroom</h3>
+                    </div>
+                    <div class="col-xs-12 no-padding-left no-padding-right">
+                        <div class="col-xs-12 form text-center  no-padding-left no-padding-right">
+                            <form id="custom-search-form-bottom" class="form-search">
+                                <div class="input-append">
+                                    <input type="text" class="search-query" placeholder="Что Вы желаете изучать?">
+                                    <button type="submit" class="btn">Подписаться</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 no-padding-left no-padding-right footer__menu">
+                            <div class="col-xs-12 col-sm-12 col-md-3 footer__logo footer__social">
+                                <a href="index.html"><img src="images/logo-br-color.png" title="Лого Classroom"
+                                                          alt="Лого Classroom"></a>
+                                <a href=""><i class="fa fa-vk"></i></a>
+                                <a href=""><i class="fa fa-google-plus"></i></a>
+                                <a href=""><i class="fa fa-instagram"></i></a>
+                                <a href=""><i class="fa fa-facebook"></i></a>
+                            </div>
+                            <div class="col-xs-4 col-sm-4 col-md-3 footer__info-block footer__top-menu">
+                                <h3>Информация</h3>
+                                <ul>
+                                    <li><a href="">О сайте</a></li>
+                                    <li><a href="">Правила</a></li>
+                                    <li><a href="">Помощь</a></li>
+                                    <li><a href="">Соглашение</a></li>
+                                    <li><a href="">Конфиденциальность</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-4 col-sm-4 col-md-3 footer__info-block footer__top-menu">
+                                <h3>Разделы</h3>
+                                <ul>
+                                    <li><a href="">Репетиторы</a></li>
+                                    <li><a href="">Инструкторы</a></li>
+                                    <li><a href="">Тренеры</a></li>
+                                    <li><a href="">Няни</a></li>
+                                    <li><a href="">Логопеды</a></li>
+                                    <li><a href="">Блоги</a></li>
+                                    <li><a href="">Форум</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-4 col-sm-4 col-md-3 footer__info-block footer__top-menu">
+                                <h3>Аккаунт</h3>
+                                <ul>
+                                    <li><a href="">Войти</a></li>
+                                    <li><a href="">Регистрация</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 footer__item__inner">
+                            <div class="f-tags">
+
+                                <div class="f-tags__item col-xs-12 col-sm-6 col-md-3 footer__info-block footer__menu">
+                                    <h3>Популярные темы</h3>
+                                    <a class="f-tags__item__tag" href="">Репетиторы математики</a>
+                                    <a class="f-tags__item__tag" href="">Репетиторы алгебры</a>
+                                    <a class="f-tags__item__tag" href="">Репетиторы биологии</a>
+                                    <a class="f-tags__item__tag" href="">Репетиторы химии</a>
+                                    <a class="f-tags__item__tag" href="">Репетиторы физики</a>
+                                </div>
+                                <div class="f-tags__item col-xs-12 col-sm-6 col-md-3 footer__info-block footer__menu">
+                                    <h3>Носители языка</h3>
+                                    <a class="f-tags__item__tag" href="">Los Angeles</a>
+                                    <a class="f-tags__item__tag" href="">Sydney</a>
+                                    <a class="f-tags__item__tag" href="">Vancouver</a>
+                                    <a class="f-tags__item__tag" href="">London</a>
+                                    <a class="f-tags__item__tag" href="">Toronto</a>
+                                    <a class="f-tags__item__tag" href="">New York City</a>
+                                    <a class="f-tags__item__tag" href="">Liverpool</a>
+                                    <a class="f-tags__item__tag" href="">English native speakers</a>
+                                </div>
+                                <div class="f-tags__item col-xs-12 col-sm-6 col-md-3 footer__info-block footer__menu">
+                                    <h3>Популярные языки</h3>
+                                    <a class="f-tags__item__tag" href="">Английский</a>
+                                    <a class="f-tags__item__tag" href="">Немецкий</a>
+                                    <a class="f-tags__item__tag" href="">Русский</a>
+                                    <a class="f-tags__item__tag" href="">Французкий</a>
+                                    <a class="f-tags__item__tag" href="">Испанский</a>
+                                    <a class="f-tags__item__tag" href="">Китайский</a>
+                                    <a class="f-tags__item__tag" href="">Японский</a>
+                                    <a class="f-tags__item__tag" href="">Португальский</a>
+                                    <a class="f-tags__item__tag" href="">Польский</a>
+                                    <a class="f-tags__item__tag" href="">Арабский</a>
+                                    <a class="f-tags__item__tag" href="">Итальянский</a>
+                                </div>
+                                <div class="f-tags__item col-xs-12 col-sm-6 col-md-3 footer__info-block footer__menu">
+                                    <h3>Популярные тесты</h3>
+                                    <a class="f-tags__item__tag" href="">FCE</a>
+                                    <a class="f-tags__item__tag" href="">HSK</a>
+                                    <a class="f-tags__item__tag" href="">BEC</a>
+                                    <a class="f-tags__item__tag" href="">DELE</a>
+                                    <a class="f-tags__item__tag" href="">TOEFL</a>
+                                    <a class="f-tags__item__tag" href="">DELF</a>
+                                    <a class="f-tags__item__tag" href="">GMAT</a>
+                                    <a class="f-tags__item__tag" href="">IELTS</a>
+                                    <a class="f-tags__item__tag" href="">DALF</a>
+                                    <a class="f-tags__item__tag" href="">TestDaF</a>
+                                </div>
+
+                            </div>
+                            <div class="f-tags-pager">
+                                <div class="f-tags-pager__item active"></div>
+                                <div class="f-tags-pager__item"></div>
+                                <div class="f-tags-pager__item"></div>
+                                <div class="f-tags-pager__item"></div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 footer__item-inner">
+                            <div class="col-xs-12 text-center">
+                                <div class="footer__menu  footer__copy__docs">
+                                    <a href="">Условия использования</a> -
+                                    <a href="">Политика конфиденциальности</a>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 footer__copy text-center">
+                                <p class="footer__menu footer__copyright">ClassRoom &copy; 2017-2018. Разработка <a
+                                        href="https://xwork.site">xWork</a>.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a id="back-to-top" class="back-to-top"><i class="fa fa-arrow-up"></i></a>
+</div>
+
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.jcarousel.min.js"></script>
+<script src="js/jquery.matchHeight.min.js"></script>
+<!--build:js js/main.min.js -->
+<script src="js/script.js"></script>
+<!-- endbuild -->
+</body>
+
+</html>

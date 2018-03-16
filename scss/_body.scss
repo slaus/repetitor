@@ -1,0 +1,143 @@
+/*!
+ * Body content
+ */
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i');
+body {
+  padding: 0;
+  margin: 0;
+  background: #eeeeeb;
+  font-size: 16px;
+  font-weight: 400;
+  color: $black;
+  font-family: 'PT Sans', sans-serif;
+  font-variant: small-caps;
+}
+
+/* error if tags without attr */
+img:not([alt]),
+label:not([for]),
+input[type=submit]:not([value]) {
+  outline:1px dotted red;
+}
+
+/* error if first child not used  */
+ul > *:not(li),
+ol > *:not(li),
+dl > *:not(dt):not(dd) {
+  outline:1px dotted red;
+}
+
+input:focus, textarea, a, button {
+  outline: none !important;
+  //-webkit-appearance: none !important; //trouble with radiobutton
+}
+
+a:-webkit-any-link {
+  color: -webkit-link;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#back-to-top {
+  color: #fff;
+  width: 56px;
+  height: 56px;
+  background-color: $green;
+  text-transform: uppercase;
+  position: fixed;
+  right: 54px;
+  bottom: 60px;
+  border-radius: 50%;
+  line-height: 50px;
+  font-size: 22px;
+  text-align: center;
+  cursor: pointer;
+  display: none;
+  z-index: 999;
+
+  &:hover {
+    background-color: rgba(18, 152, 160, 0.7);
+    text-decoration: none;
+
+    & .fa {
+      color: rgba(255,255,255,.6);
+    }
+  }
+}
+
+.clearfix {
+
+  &:after,
+  &:before {
+    content: "";
+    display: table;
+    height: 0;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.wrapper {
+  padding: 0;
+  margin: 0;
+}
+
+::-webkit-scrollbar-button {
+  width:6px;
+  height:0;
+}
+
+::-webkit-scrollbar-track {
+  background-color: $white;
+  border-radius: 5px;
+  box-shadow:0 0 3px $black inset;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: $green;
+  box-shadow:0 1px 1px $white inset;
+}
+
+::-webkit-resizer {
+  width:6px;
+  height:0
+}
+::-webkit-scrollbar{
+  width: 10px;
+}
+
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.reverse {
+  flex-direction: row-reverse;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  //align-items: center;
+}
+.padding-left {
+  padding-left: 15px;
+}
+.padding-right {
+  padding-right: 15px;
+}
+.padding-bottom {
+  padding-bottom: 15px;
+}
+.padding-top {
+  padding-top: 15px;
+}
+.no-padding-left {
+  padding-left: 0;
+}
+.no-padding-right {
+  padding-right: 0;
+}

@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="Keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="msapplication-TileImage" content="images/ico/144x144.png">
+    <meta name="msapplication-TileImage" content="images/ico/152x152.png"/>
+    <link rel="icon" type="image/vnd.microsoft.icon" href="images/ico/16x16.ico" sizes="16x16"/>
+    <link rel="icon" type="image/vnd.microsoft.icon" href="images/ico/32x32.ico" sizes="32x32"/>
+    <link rel="icon" type="image/png" href="images/ico/32x32.png" sizes="32x32"/>
+    <link rel="icon" type="image/png" href="images/ico/152x152.png" sizes="152x152"/>
+    <link rel="apple-touch-icon-precomposed" href="images/ico/152x152.png"/>
+    <link rel="apple-touch-icon" href="images/ico/57x57.png" sizes="57x57">
+    <link rel="apple-touch-icon" href="images/ico/72x72.png" sizes="72x72">
+    <link rel="apple-touch-icon" href="images/ico/114x114.png" sizes="114x114">
+    <link rel="apple-touch-icon" href="images/ico/120x120.png" sizes="120x120">
+    <link rel="apple-touch-icon" href="images/ico/144x144.png" sizes="144x144">
+    <link rel="apple-touch-icon" href="images/ico/152x152.png" sizes="152x152">
+    <link rel="ehesive" href="images/ico/index.json">
+
+    <title>starter</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!--build:css css/styles.min.css-->
+    <link rel="stylesheet" href="css/styles.css">
+    <!--endbuild-->
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen, projection"/>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/css3-mediaqueries.min.js"></script>
+    <script>
+        document.createElement('header');
+        document.createElement('nav');
+        document.createElement('main');
+        document.createElement('section');
+        document.createElement('article');
+        document.createElement('aside');
+        document.createElement('footer');
+    </script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="wrapper">
+    <header class="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="header__top-menu">
+                    <div class="container">
+                        <div class="row">
+                            <div class="header__logo col-xs-3">
+                                <a href="index.html"><img src="images/logo-br-color.png" title="Лого Classroom"
+                                                          alt="Лого Classroom"></a>
+                            </div>
+                            <div class="header__register col-xs-9 text-right">
+                                <ul>
+                                    <li class="header__register-item"><a href="login.html"
+                                                                         class="header__register-link header__register-link-enter"><img
+                                            src="images/icon-01.png" alt=""> Вход</a>
+                                    </li>
+                                    <li class="header__register-item"><a href="register.html"
+                                                                         class="header__register-link header__register-link-reg"><img
+                                            src="images/icon-02.png" alt=""> Регистрация</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__page">
+                    <div class="col-xs-12 form text-center">
+                        <form id="custom-search-form" class="form-search">
+                            <div class="input-append">
+                                <input type="text" class="search-query" placeholder="Что Вы желаете изучать?">
+                                <button type="submit" class="btn">Найти <i class="fa fa-search"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="header__menu" id="header__top-menu">
+            <a href="#" id="mobile">Меню</a>
+            <ul class="top-menu">
+                <li class="header__menu-item"><a href="page.html" class="header__menu-link">Репетиторы</a></li>
+                <li class="header__menu-item"><a href="page.html" class="header__menu-link">Инструкторы</a></li>
+                <li class="header__menu-item"><a href="page.html" class="header__menu-link">Тренеры</a></li>
+                <li class="header__menu-item"><a href="page.html" class="header__menu-link">Няни</a></li>
+                <li class="header__menu-item"><a href="page.html" class="header__menu-link">Логопеды</a></li>
+                <li class="header__menu-item"><a href="page.html" class="header__menu-link">Блоги</a></li>
+                <li class="header__menu-item"><a href="page.html" class="header__menu-link">Форум</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+
+        <div class="container">
+            <div class="row">
+                <h2 class="text-center">Преподавательский состав</h2>
+                <div class="col-xs-12 main__about main__about-block">
+
+                    <div class="col-xs-12 col-sm-7 col-md-8 main__about-teachers">
+
+                        <div class="col-xs-12 col-sm-12 col-md-6">
+                            <div class="people-item same-column">
+                                <div class="media">
+                                    <a href="profile.html" class="pull-left">
+                                        <img alt="" src="images/image-1.jpg" class="media-object">
+                                    </a>
+                                    <div class="media-body">
+                                        <span>Возраст: 41(лет)</span>
+                                        <h4 class="person-name"><a href="profile.html">Прохорова Алевтина Ярославовна</a></h4>
+                                        <div class="text-muted"><span
+                                                class="m-grid__item-label m-grid__item-label--active">Французский язык</span>
+                                        </div>
+                                        <div class="text-muted"><span
+                                                class="m-grid__item-label m-grid__item-label--active">Английский язык</span>
+                                        </div>
+                                        <div class="text-muted"><span
+                                                class="m-grid__item-label m-grid__item-label--deactivated">Стаж 6 лет</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6">
+                            <div class="people-item same-column">
+                                <div class="media">
+                                    <a href="profile.html" class="pull-left">
+                                        <img alt="" src="images/image-1.jpg" class="media-object">
+                                    </a>
+                                    <div class="media-body">
+                                        <span>Возраст: 41(лет)</span>
+                                        <h4 class="person-name"><a href="profile.html">Прохорова Алевтина Ярославовна</a></h4>
+                                        <div class="text-muted"><span
+                                                class="m-grid__item-label m-grid__item-label--active">Французский язык</span>
+                                        </div>
+                                        <div class="text-muted"><span
+                                                class="m-grid__item-label m-grid__item-label--active">Английский язык</span>
+                                        </div>
+                                        <div class="text-muted"><span
+                                                class="m-grid__item-label m-grid__item-label--active">Китайский язык</span>
+                                        </div>
+                                        <div class="text-muted"><span
+                                                class="m-grid__item-label m-grid__item-label--deactivated">Стаж 6 лет</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6">
+                            <div class="people-item same-column">
+                                <div class="media">
+                                    <a href="profile.html" class="pull-left">
+                                        <img alt="" src="images/image-1.jpg" class="media-object">
+                                    </a>
+                                    <div class="media-body">
+                                        <span>Возраст: 41(лет)</span>
+                                        <h4 class="person-name"><a href="profile.html">Прохорова Алевтина Ярославовна</a></h4>
+                                        <div class="text-muted"><span
+                                                class="m-grid__item-label m-grid__item-label--active">Французский язык</span>
+                                        </div>
+                                        <div class="text-muted"><span
+                                                class="m-grid__item-label m-grid__item-label--active">Английский язык</span>
+                                        </div>
+                                        <div class="text-muted"><span
+                                                class="m-grid__item-label m-grid__item-label--deactivated">Стаж 6 лет</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6">
+                            <div class="people-item same-column">
+                                <div class="media">
+                                    <a href="profile.html" class="pull-left">
+                                        <img alt="" src="images/image-1.jpg" class="media-object">
+                                    </a>
+                                    <div class="media-body">
+                                        <span>Возраст: 41(лет)</span>
+                                        <h4 class="person-name"><a href="profile.html">Прохорова Алевтина Ярославовна</a></h4>
+                                        <div class="text-muted"><span
+                                                class="m-grid__item-label m-grid__item-label--active">Французский язык</span>
+                                        </div>
+                                        <div class="text-muted"><span
+                                                class="m-grid__item-label m-grid__item-label--active">Английский язык</span>
+                                        </div>
+                                        <div class="text-muted"><span
+                                                class="m-grid__item-label m-grid__item-label--deactivated">Стаж 6 лет</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6">
+                            <div class="people-item same-column">
+                                <div class="media">
+                                    <a href="profile.html" class="pull-left">
+                                        <img alt="" src="images/image-1.jpg" class="media-object">
+                                    </a>
+                                    <div class="media-body">
+                                        <span>Возраст: 41(лет)</span>
+                                        <h4 class="person-name"><a href="profile.html">Прохорова Алевтина Ярославовна</a></h4>
+                                        <div class="text-muted"><span
+                                                class="m-grid__item-label m-grid__item-label--active">Французский язык</span>
+                                        </div>
+                                        <div class="text-muted"><span
+                                                class="m-grid__item-label m-grid__item-label--active">Английский язык</span>
+                                        </div>
+                                        <div class="text-muted"><span
+                                                class="m-grid__item-label m-grid__item-label--active">Румынский язык</span>
+                                        </div>
+                                        <div class="text-muted"><span
+                                                class="m-grid__item-label m-grid__item-label--deactivated">Стаж 6 лет</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6">
+                            <div class="people-item same-column">
+                                <div class="media">
+                                    <a href="profile.html" class="pull-left">
+                                        <img alt="" src="images/image-1.jpg" class="media-object">
+                                    </a>
+                                    <div class="media-body">
+                                        <span>Возраст: 41(лет)</span>
+                                        <h4 class="person-name"><a href="profile.html">Прохорова Алевтина Ярославовна</a></h4>
+                                        <div class="text-muted"><span
+                                                class="m-grid__item-label m-grid__item-label--active">Французский язык</span>
+                                        </div>
+                                        <div class="text-muted"><span
+                                                class="m-grid__item-label m-grid__item-label--active">Английский язык</span>
+                                        </div>
+                                        <div class="text-muted"><span
+                                                class="m-grid__item-label m-grid__item-label--deactivated">Стаж 6 лет</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-xs-12 col-sm-5 col-md-4 main__about-description main__filter">
+                        <h4 class="title">Подбор репетиторов</h4>
+                        <form action="" method="post">
+
+
+                            <p>Страна</p>
+                            <select name="PERSONAL_COUNTRY" id="personal-country">
+                                <option value="no">Выбрать страну</option>
+                                <option value="1285">Россия</option>
+                                <option value="1290">Казахстан</option>
+                                <option value="1302">Беларусь</option>
+                                <option value="1308">Таджикистан</option>
+                                <option value="1317">Украина</option>
+                                <option value="1331">Латвия</option>
+                                <option value="1334">Молдова</option>
+                                <option value="1341">Армения</option>
+                                <option value="1345">Эстония</option>
+                                <option value="1356">Туркменистан</option>
+                                <option value="1397">Крым</option>
+
+
+                            </select>
+
+                            <div id="personal-state-div"></div>
+                            <div id="personal-city-div"></div>
+
+
+                            <p>Возраст</p>
+                            <select name="PERSONAL_BIRTHDAY_2">
+                                <option value="no">От</option>
+                                <option value="01.01.2002">16</option>
+                                <option value="01.01.2001">17</option>
+                                <option value="01.01.2000">18</option>
+                                <option value="01.01.1999">19</option>
+                                <option value="01.01.1998">20</option>
+                                <option value="01.01.1997">21</option>
+                                <option value="01.01.1996">22</option>
+                                <option value="01.01.1995">23</option>
+                                <option value="01.01.1994">24</option>
+                                <option value="01.01.1993">25</option>
+                                <option value="01.01.1992">26</option>
+                                <option value="01.01.1991">27</option>
+                                <option value="01.01.1990">28</option>
+                                <option value="01.01.1989">29</option>
+                                <option value="01.01.1988">30</option>
+                                <option value="01.01.1987">31</option>
+                                <option value="01.01.1986">32</option>
+                                <option value="01.01.1985">33</option>
+                                <option value="01.01.1984">34</option>
+                                <option value="01.01.1983">35</option>
+                                <option value="01.01.1982">36</option>
+                                <option value="01.01.1981">37</option>
+                                <option value="01.01.1980">38</option>
+                                <option value="01.01.1979">39</option>
+                                <option value="01.01.1978">40</option>
+                                <option value="01.01.1977">41</option>
+                                <option value="01.01.1976">42</option>
+                                <option value="01.01.1975">43</option>
+                                <option value="01.01.1974">44</option>
+                                <option value="01.01.1973">45</option>
+                                <option value="01.01.1972">46</option>
+                                <option value="01.01.1971">47</option>
+                                <option value="01.01.1970">48</option>
+                                <option value="01.01.1969">49</option>
+                                <option value="01.01.1968">50</option>
+                                <option value="01.01.1967">51</option>
+                                <option value="01.01.1966">52</option>
+                                <option value="01.01.1965">53</option>
+                                <option value="01.01.1964">54</option>
+                                <option value="01.01.1963">55</option>
+                                <option value="01.01.1962">56</option>
+                                <option value="01.01.1961">57</option>
+                                <option value="01.01.1960">58</option>
+                                <option value="01.01.1959">59</option>
+                            </select>
+                            <select name="PERSONAL_BIRTHDAY_1">
+                                <option value="no">До</option>
+                                <option value="01.01.1958">60</option>
+                                <option value="01.01.1959">59</option>
+                                <option value="01.01.1960">58</option>
+                                <option value="01.01.1961">57</option>
+                                <option value="01.01.1962">56</option>
+                                <option value="01.01.1963">55</option>
+                                <option value="01.01.1964">54</option>
+                                <option value="01.01.1965">53</option>
+                                <option value="01.01.1966">52</option>
+                                <option value="01.01.1967">51</option>
+                                <option value="01.01.1968">50</option>
+                                <option value="01.01.1969">49</option>
+                                <option value="01.01.1970">48</option>
+                                <option value="01.01.1971">47</option>
+                                <option value="01.01.1972">46</option>
+                                <option value="01.01.1973">45</option>
+                                <option value="01.01.1974">44</option>
+                                <option value="01.01.1975">43</option>
+                                <option value="01.01.1976">42</option>
+                                <option value="01.01.1977">41</option>
+                                <option value="01.01.1978">40</option>
+                                <option value="01.01.1979">39</option>
+                                <option value="01.01.1980">38</option>
+                                <option value="01.01.1981">37</option>
+                                <option value="01.01.1982">36</option>
+                                <option value="01.01.1983">35</option>
+                                <option value="01.01.1984">34</option>
+                                <option value="01.01.1985">33</option>
+                                <option value="01.01.1986">32</option>
+                                <option value="01.01.1987">31</option>
+                                <option value="01.01.1988">30</option>
+                                <option value="01.01.1989">29</option>
+                                <option value="01.01.1990">28</option>
+                                <option value="01.01.1991">27</option>
+                                <option value="01.01.1992">26</option>
+                                <option value="01.01.1993">25</option>
+                                <option value="01.01.1994">24</option>
+                                <option value="01.01.1995">23</option>
+                                <option value="01.01.1996">22</option>
+                                <option value="01.01.1997">21</option>
+                                <option value="01.01.1998">20</option>
+                                <option value="01.01.1999">19</option>
+                                <option value="01.01.2000">18</option>
+                                <option value="01.01.2001">17</option>
+                            </select>
+
+
+                            <p>Предмет обучения</p>
+                            <select name="PROFESSION" id="subject-list">
+                                <option value="no">Выбрать предмет</option>
+                                <option value="1">Французский язык</option>
+                                <option value="2">Актёрское мастерство</option>
+                                <option value="3">Биология</option>
+                                <option value="4">Бухгалтерский учёт</option>
+                                <option value="5">Вокал</option>
+                                <option value="6">Высшая математика</option>
+                                <option value="7">Статистика</option>
+                                <option value="8">Финансовая математика</option>
+                                <option value="9">География</option>
+                                <option value="10">Дизайн</option>
+                                <option value="11">Журналистика</option>
+                                <option value="12">ИЗО</option>
+                                <option value="13">Инженерные дисциплины</option>
+                                <option value="14">Радиотехника</option>
+                                <option value="15">Информатика</option>
+                                <option value="16">История</option>
+                                <option value="17">Литература</option>
+                                <option value="18">МХК</option>
+                                <option value="19">Музыка</option>
+                                <option value="20">Начальная школа</option>
+                                <option value="21">Школа</option>
+                                <option value="22">Подготовка к экзаменам</option>
+                                <option value="23">Программирование</option>
+                                <option value="24">Психология</option>
+                                <option value="25">Рукоделие</option>
+                                <option value="26">Физика</option>
+                                <option value="27">Философия</option>
+                                <option value="28">Фотодело</option>
+                                <option value="29">Химия</option>
+                                <option value="30">Черчение</option>
+                                <option value="31">Шахматы</option>
+                                <option value="32">
+                                    Экономика
+                                </option>
+                                <option value="33">Русский язык</option>
+                                <option value="34">Обществознание</option>
+                                <option value="35">Обществознание</option>
+                                <option value="36">Подготовка к олимпиадам</option>
+                                <option value="37">Подготовка к школе</option>
+                                <option value="38">Логопеды</option>
+                            </select>
+
+                            <div id="cat-list-div"></div>
+                            <div id="subcat-list-div"></div>
+                            <p>Пол репетитора</p>
+                            <div class="radio-block">
+                                <label class="radio-inline" for="inlineRadio1">
+                                    <input type="radio" name="PERSONAL_GENDER" id="inlineRadio1" value="N" checked=""> М/Ж
+                                </label>
+                                <label class="radio-inline" for="inlineRadio2">
+                                    <input type="radio" name="PERSONAL_GENDER" id="inlineRadio2" value="M"> М
+                                </label>
+                                <label class="radio-inline" for="inlineRadio3">
+                                    <input type="radio" name="PERSONAL_GENDER" id="inlineRadio3" value="F"> Ж
+                                </label>
+                            </div>
+
+
+                            <p>Метод обучения</p>
+                            <div class="checkbox-block">
+                                <div class="checkbox">
+                                    <label for="WORK_ONLINE">
+                                        <input type="checkbox" name="WORK_ONLINE" id="WORK_ONLINE">
+                                        Обучение Online
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label for="WORK_HOME">
+                                        <input type="checkbox" name="WORK_HOME" id="WORK_HOME">
+                                        Обучение на дому
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label for="WORK_HOUSE">
+                                        <input type="checkbox" name="WORK_HOUSE" id="WORK_HOUSE">
+                                        Обучение на выезде
+                                    </label>
+                                </div>
+                            </div>
+                            <button type="submit" class="main__info-block-button">Подобрать</button>
+                            <button type="reset" class="main__info-block-button" name="reset">Сбросить</button>
+                        </form>
+                    </div>
+
+                </div>
+
+                <div class="col-xs-12 text-center pages-block">
+                    <span>Начало</span><span>Пред.</span><span>1</span><span><a href="">2</a></span><span><a
+                        href="">3</a></span><span><a href="">4</a></span><span><a href="">След.</a></span><span><a href="">Конец</a></span><span><a
+                            href="">Все</a></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid main__best">
+            <div class="row">
+                <div class="container">
+                    <div class="row">
+                        <h2 class="text-center">Лучшее репетиторы</h2>
+
+                        <div class="jcarousel-wrapper">
+                            <div class="jcarousel best">
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <img src="images/image-1.jpg" class="photo" alt="">
+                                            <h4 class="text-center">Алена Силаева</h4>
+                                            <p>Преподователь английского языка</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="images/image-1.jpg" class="photo" alt="">
+                                            <h4 class="text-center">Алена Силаева</h4>
+                                            <p>Преподователь английского языка</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="images/image-1.jpg" class="photo" alt="">
+                                            <h4 class="text-center">Алена Силаева</h4>
+                                            <p>Преподователь английского языка</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="images/image-1.jpg" class="photo" alt="">
+                                            <h4 class="text-center">Алена Силаева</h4>
+                                            <p>Преподователь английского языка</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <a href="#" class="jcarousel-control-prev"></a>
+                            <a href="#" class="jcarousel-control-next"></a>
+
+                            <p class="jcarousel-pagination"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 main__about">
+                    <div class="col-xs-12 text-center">
+                        <h3>Подпишись на новости портала репетиторов Classroom</h3>
+                    </div>
+                    <div class="col-xs-12 no-padding-left no-padding-right">
+                        <div class="col-xs-12 form text-center  no-padding-left no-padding-right">
+                            <form id="custom-search-form-bottom" class="form-search">
+                                <div class="input-append">
+                                    <input type="text" class="search-query" placeholder="Что Вы желаете изучать?">
+                                    <button type="submit" class="btn">Подписаться</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 no-padding-left no-padding-right footer__menu">
+                            <div class="col-xs-12 col-sm-12 col-md-3 footer__logo footer__social">
+                                <a href="index.html"><img src="images/logo-br-color.png" title="Лого Classroom"
+                                                          alt="Лого Classroom"></a>
+                                <a href=""><i class="fa fa-vk"></i></a>
+                                <a href=""><i class="fa fa-google-plus"></i></a>
+                                <a href=""><i class="fa fa-instagram"></i></a>
+                                <a href=""><i class="fa fa-facebook"></i></a>
+                            </div>
+                            <div class="col-xs-4 col-sm-4 col-md-3 footer__info-block footer__top-menu">
+                                <h3>Информация</h3>
+                                <ul>
+                                    <li><a href="">О сайте</a></li>
+                                    <li><a href="">Правила</a></li>
+                                    <li><a href="">Помощь</a></li>
+                                    <li><a href="">Соглашение</a></li>
+                                    <li><a href="">Конфиденциальность</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-4 col-sm-4 col-md-3 footer__info-block footer__top-menu">
+                                <h3>Разделы</h3>
+                                <ul>
+                                    <li><a href="">Репетиторы</a></li>
+                                    <li><a href="">Инструкторы</a></li>
+                                    <li><a href="">Тренеры</a></li>
+                                    <li><a href="">Няни</a></li>
+                                    <li><a href="">Логопеды</a></li>
+                                    <li><a href="">Блоги</a></li>
+                                    <li><a href="">Форум</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-4 col-sm-4 col-md-3 footer__info-block footer__top-menu">
+                                <h3>Аккаунт</h3>
+                                <ul>
+                                    <li><a href="">Войти</a></li>
+                                    <li><a href="">Регистрация</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 footer__item__inner">
+                            <div class="f-tags">
+
+                                <div class="f-tags__item col-xs-12 col-sm-6 col-md-3 footer__info-block footer__menu">
+                                    <h3>Популярные темы</h3>
+                                    <a class="f-tags__item__tag" href="">Репетиторы математики</a>
+                                    <a class="f-tags__item__tag" href="">Репетиторы алгебры</a>
+                                    <a class="f-tags__item__tag" href="">Репетиторы биологии</a>
+                                    <a class="f-tags__item__tag" href="">Репетиторы химии</a>
+                                    <a class="f-tags__item__tag" href="">Репетиторы физики</a>
+                                </div>
+                                <div class="f-tags__item col-xs-12 col-sm-6 col-md-3 footer__info-block footer__menu">
+                                    <h3>Носители языка</h3>
+                                    <a class="f-tags__item__tag" href="">Los Angeles</a>
+                                    <a class="f-tags__item__tag" href="">Sydney</a>
+                                    <a class="f-tags__item__tag" href="">Vancouver</a>
+                                    <a class="f-tags__item__tag" href="">London</a>
+                                    <a class="f-tags__item__tag" href="">Toronto</a>
+                                    <a class="f-tags__item__tag" href="">New York City</a>
+                                    <a class="f-tags__item__tag" href="">Liverpool</a>
+                                    <a class="f-tags__item__tag" href="">English native speakers</a>
+                                </div>
+                                <div class="f-tags__item col-xs-12 col-sm-6 col-md-3 footer__info-block footer__menu">
+                                    <h3>Популярные языки</h3>
+                                    <a class="f-tags__item__tag" href="">Английский</a>
+                                    <a class="f-tags__item__tag" href="">Немецкий</a>
+                                    <a class="f-tags__item__tag" href="">Русский</a>
+                                    <a class="f-tags__item__tag" href="">Французкий</a>
+                                    <a class="f-tags__item__tag" href="">Испанский</a>
+                                    <a class="f-tags__item__tag" href="">Китайский</a>
+                                    <a class="f-tags__item__tag" href="">Японский</a>
+                                    <a class="f-tags__item__tag" href="">Португальский</a>
+                                    <a class="f-tags__item__tag" href="">Польский</a>
+                                    <a class="f-tags__item__tag" href="">Арабский</a>
+                                    <a class="f-tags__item__tag" href="">Итальянский</a>
+                                </div>
+                                <div class="f-tags__item col-xs-12 col-sm-6 col-md-3 footer__info-block footer__menu">
+                                    <h3>Популярные тесты</h3>
+                                    <a class="f-tags__item__tag" href="">FCE</a>
+                                    <a class="f-tags__item__tag" href="">HSK</a>
+                                    <a class="f-tags__item__tag" href="">BEC</a>
+                                    <a class="f-tags__item__tag" href="">DELE</a>
+                                    <a class="f-tags__item__tag" href="">TOEFL</a>
+                                    <a class="f-tags__item__tag" href="">DELF</a>
+                                    <a class="f-tags__item__tag" href="">GMAT</a>
+                                    <a class="f-tags__item__tag" href="">IELTS</a>
+                                    <a class="f-tags__item__tag" href="">DALF</a>
+                                    <a class="f-tags__item__tag" href="">TestDaF</a>
+                                </div>
+
+                            </div>
+                            <div class="f-tags-pager">
+                                <div class="f-tags-pager__item active"></div>
+                                <div class="f-tags-pager__item"></div>
+                                <div class="f-tags-pager__item"></div>
+                                <div class="f-tags-pager__item"></div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 footer__item-inner">
+                            <div class="col-xs-12 text-center">
+                                <div class="footer__menu  footer__copy__docs">
+                                    <a href="">Условия использования</a> -
+                                    <a href="">Политика конфиденциальности</a>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 footer__copy text-center">
+                                <p class="footer__menu footer__copyright">ClassRoom &copy; 2017-2018. Разработка <a
+                                        href="https://xwork.site">xWork</a>.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a id="back-to-top" class="back-to-top"><i class="fa fa-arrow-up"></i></a>
+</div>
+
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.jcarousel.min.js"></script>
+<script src="js/jquery.matchHeight.min.js"></script>
+<!--build:js js/main.min.js -->
+<script src="js/script.js"></script>
+<!-- endbuild -->
+</body>
+
+</html>

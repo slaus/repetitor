@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * All styles for site
  */
@@ -204,7 +205,8 @@ a:-webkit-any-link {
         .header__search .titles h2 {
           font-size: 30px; } }
     .header__search .titles h2 b {
-      font-size: 76px; }
+      font-size: 76px;
+      color: #0a7b82; }
       @media screen and (max-width: 1139px) {
         .header__search .titles h2 b {
           font-size: 70px; } }
@@ -238,13 +240,24 @@ a:-webkit-any-link {
           text-decoration: none;
           color: #29a2a9; }
   .header__menu {
-    background-color: rgba(18, 152, 160, 0.7);
+    background-color: #1298a0;
     position: absolute;
-    bottom: 0;
+    top: 42px;
     width: 100%;
     height: fit-content; }
+    @media screen and (max-width: 499px) {
+      .header__menu {
+        top: 82px; } }
     .header__menu ul {
       text-align: center; }
+      @media screen and (max-width: 949px) {
+        .header__menu ul li {
+          width: 49%;
+          display: inline-block; } }
+      @media screen and (max-width: 767px) {
+        .header__menu ul li {
+          width: 100%;
+          display: block; } }
       .header__menu ul li a {
         color: white;
         font-size: 20px;
@@ -253,9 +266,12 @@ a:-webkit-any-link {
         padding: 0 20px;
         line-height: 64px;
         display: inline-block; }
+        @media screen and (max-width: 949px) {
+          .header__menu ul li a {
+            line-height: 44px; } }
         .header__menu ul li a:hover {
           text-decoration: none;
-          background-color: rgba(18, 152, 160, 0.7); }
+          background-color: #0a7b82; }
 
 .form-search {
   margin-bottom: 30px; }
@@ -267,7 +283,8 @@ a:-webkit-any-link {
     margin: 0 auto; }
     @media screen and (max-width: 767px) {
       .form-search .input-append {
-        padding: 0; } }
+        padding: 0;
+        height: 44px; } }
   .form-search input {
     width: 100%;
     height: 100%;
@@ -287,8 +304,17 @@ a:-webkit-any-link {
     top: 0;
     font-size: 18px;
     text-transform: uppercase; }
+    @media screen and (max-width: 767px) {
+      .form-search button {
+        height: 44px; } }
+    @media screen and (max-width: 499px) {
+      .form-search button {
+        width: 100px; } }
     .form-search button i {
       margin-left: 20px; }
+      @media screen and (max-width: 499px) {
+        .form-search button i {
+          display: none; } }
 
 nav a#mobile {
   display: none; }
@@ -407,6 +433,9 @@ nav a#mobile {
   margin-bottom: 20px;
   padding-left: 10%;
   padding-right: 10%; }
+  @media screen and (max-width: 767px) {
+    .main h2 {
+      font-size: 25px; } }
 
 .main .main__info-block {
   margin-bottom: 20px;
@@ -414,6 +443,9 @@ nav a#mobile {
   align-items: center; }
   .main .main__info-block.no-icons {
     padding-left: 80px; }
+    @media screen and (max-width: 499px) {
+      .main .main__info-block.no-icons {
+        padding-left: 20px; } }
   .main .main__info-block-button {
     padding: 4px 30px;
     background-color: #40acb2;
@@ -439,12 +471,20 @@ nav a#mobile {
   padding-right: 20%; }
   @media screen and (max-width: 499px) {
     .main .main__info span {
-      padding-right: 20px; } }
+      padding-right: 20px;
+      width: 100%; } }
 
 .main .main__info img {
   width: 30px;
   height: 30px;
   display: inline-block; }
+  @media screen and (max-width: 499px) {
+    .main .main__info img {
+      display: none; } }
+
+.main .main__info .register-form img {
+  width: inherit;
+  height: inherit; }
 
 .main .section {
   background: #fff;
@@ -787,6 +827,9 @@ nav a#mobile {
       background-color: white;
       box-shadow: 0 1px 12px rgba(47, 47, 47, 0.15);
       margin: 0 5px; }
+      @media screen and (max-width: 499px) {
+        .jcarousel-wrapper .jcarousel ul li {
+          padding: 30px 50px 10px 50px; } }
       .jcarousel-wrapper .jcarousel ul li .photo {
         width: 115px;
         height: 115px;
@@ -888,7 +931,7 @@ nav a#mobile {
     width: 100px;
     height: 100px;
     margin: 5px;
-    border-radius: 50%;
+    border-radius: 6зч;
     -moz-transition: all .5s ease-out;
     -o-transition: all .5s ease-out;
     -webkit-transition: all .5s ease-out; }

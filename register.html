@@ -79,12 +79,12 @@
                 </div>
                 <div class="header__page">
                     <div class="col-xs-12 form text-center">
-                        <form id="custom-search-form" class="form-search">
-                            <div class="input-append">
-                                <input type="text" class="search-query" placeholder="Что Вы желаете изучать?">
-                                <button type="submit" class="btn">Найти <i class="fa fa-search"></i></button>
-                            </div>
-                        </form>
+                        <!--<form id="custom-search-form" class="form-search">-->
+                        <!--<div class="input-append">-->
+                        <!--<input type="text" class="search-query" placeholder="Что Вы желаете изучать?">-->
+                        <!--<button type="submit" class="btn">Найти <i class="fa fa-search"></i></button>-->
+                        <!--</div>-->
+                        <!--</form>-->
                     </div>
                 </div>
             </div>
@@ -106,169 +106,196 @@
 
         <div class="container">
             <div class="row">
-                <h2 class="text-center">Регистрация ученика</h2>
-                <div class="col-xs-12 main__about main__about-block">
-                    <div class="col-xs-12 col-sm-12 col-md-12 main__about-description login-form register-form">
-                        <div class="fields">
+                <h2 class="text-center">Регистрация на сайте</h2>
 
-                            <form method="post" action="" name="bform">
-                                <input type="hidden" name="backurl" value="/login/">
-                                <input type="hidden" name="AUTH_FORM" value="Y">
-                                <input type="hidden" name="TYPE" value="REGISTRATION">
-                                <div class="field">
-                                    <label class="field-title" for="USER_NAME">Имя</label>
-                                    <div class="form-input"><input type="text" id="USER_NAME" name="USER_NAME"
-                                                                   autocomplete="off"
-                                                                   maxlength="50" placeholder="Ваше имя"></div>
-                                </div>
-                                <div class="field">
-                                    <label class="field-title" for="USER_LAST_NAME">Фамилия</label>
-                                    <div class="form-input"><input type="text" id="USER_LAST_NAME" name="USER_LAST_NAME"
-                                                                   autocomplete="off"
-                                                                   maxlength="50" placeholder="Ваша фамилия"></div>
-                                </div>
-                                <div class="field">
-                                    <label class="field-title" for="USER_LOGIN_P">Логин</label>
-                                    <div class="form-input"><input type="text" id="USER_LOGIN_P" name="USER_LOGIN_P"
-                                                                   maxlength="50" autocomplete="off"
-                                                                   placeholder="Логин должен быть не менее 3 символов.">
-                                    </div>
-                                </div>
-                                <div class="field">
-                                    <label class="field-title" for="USER_PASSWORD_P">Пароль<span
-                                            class="starrequired">*</span></label>
-                                    <div class="form-input"><input type="password" id="USER_PASSWORD_P"
-                                                                   autocomplete="off"
-                                                                   name="USER_PASSWORD" maxlength="50"
-                                                                   placeholder="Пароль должен быть не менее 6 символов длиной.">
-                                    </div>
-                                </div>
-                                <div class="field">
-                                    <label class="field-title" for="USER_CONFIRM_PASSWORD_P">Подтверждение
-                                        пароля</label>
-                                    <div class="form-input"><input type="password" id="USER_CONFIRM_PASSWORD_P"
-                                                                   autocomplete="off"
-                                                                   name="USER_CONFIRM_PASSWORD" maxlength="50"
-                                                                   placeholder="Повторите Ваш пароль"></div>
-                                </div>
-                                <div class="field">
-                                    <label class="field-title" for="USER_EMAIL_P">E-Mail</label>
-                                    <div class="form-input"><input type="text" id="USER_EMAIL_P" name="USER_EMAIL_P"
-                                                                   autocomplete="off"
-                                                                   maxlength="255" placeholder="Введите Ваш e-mail">
-                                    </div>
-                                </div>
-                                <div class="field">
-                                    <label class="field-title" for="captcha">Код на картинке</label>
-                                    <div class="form-input"><input type="text" id="captcha" name="captcha_word"
-                                                                   maxlength="50" placeholder="Введите код с картинки">
-                                        <div style="margin-top:-10px;margin-right:-15px;">
-                                            <img src="images/captcha.jpg" width="180" height="40" alt="CAPTCHA"></div>
-                                    </div>
-                                </div>
+                <div class="col-xs-12 no-padding-right main__profile main__profile-right">
+                    <div class="col-xs-12 main__info relative section same-column padding-bottom">
 
-                                <div class="field field-button text-center field-button-block">
-                                    <input type="submit" class="input-submit main__info-block-button" name="Register"
-                                           value="Зарегистрироваться как ученик">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a data-toggle="tab" href="#panel1">Регистрация ученика</a></li>
+                            <li><a data-toggle="tab" href="#panel2">Регистрация репетитора</a></li>
+                        </ul>
+
+                        <div class="tab-content">
+                            <div id="panel1" class="tab-pane fade padding-top in active">
+                                <div class="col-xs-12 col-sm-12 col-md-12 login-form register-form">
+                                    <div class="fields">
+
+                                        <form method="post" action="" name="bform">
+                                            <input type="hidden" name="backurl" value="/login/">
+                                            <input type="hidden" name="AUTH_FORM" value="Y">
+                                            <input type="hidden" name="TYPE" value="REGISTRATION">
+                                            <div class="field">
+                                                <label class="field-title" for="USER_NAME">Имя</label>
+                                                <div class="form-input"><input type="text" id="USER_NAME"
+                                                                               name="USER_NAME"
+                                                                               autocomplete="off"
+                                                                               maxlength="50" placeholder="Ваше имя">
+                                                </div>
+                                            </div>
+                                            <div class="field">
+                                                <label class="field-title" for="USER_LAST_NAME">Фамилия</label>
+                                                <div class="form-input"><input type="text" id="USER_LAST_NAME"
+                                                                               name="USER_LAST_NAME"
+                                                                               autocomplete="off"
+                                                                               maxlength="50"
+                                                                               placeholder="Ваша фамилия"></div>
+                                            </div>
+                                            <div class="field">
+                                                <label class="field-title" for="USER_LOGIN_P">Логин</label>
+                                                <div class="form-input"><input type="text" id="USER_LOGIN_P"
+                                                                               name="USER_LOGIN_P"
+                                                                               maxlength="50" autocomplete="off"
+                                                                               placeholder="Логин должен быть не менее 3 символов.">
+                                                </div>
+                                            </div>
+                                            <div class="field">
+                                                <label class="field-title" for="USER_PASSWORD_P">Пароль</label>
+                                                <div class="form-input"><input type="password" id="USER_PASSWORD_P"
+                                                                               autocomplete="off"
+                                                                               name="USER_PASSWORD" maxlength="50"
+                                                                               placeholder="Пароль должен быть не менее 6 символов длиной.">
+                                                </div>
+                                            </div>
+                                            <div class="field">
+                                                <label class="field-title" for="USER_CONFIRM_PASSWORD_P">Подтверждение
+                                                    пароля</label>
+                                                <div class="form-input"><input type="password"
+                                                                               id="USER_CONFIRM_PASSWORD_P"
+                                                                               autocomplete="off"
+                                                                               name="USER_CONFIRM_PASSWORD"
+                                                                               maxlength="50"
+                                                                               placeholder="Повторите Ваш пароль"></div>
+                                            </div>
+                                            <div class="field">
+                                                <label class="field-title" for="USER_EMAIL_P">E-Mail</label>
+                                                <div class="form-input"><input type="text" id="USER_EMAIL_P"
+                                                                               name="USER_EMAIL_P"
+                                                                               autocomplete="off"
+                                                                               maxlength="255"
+                                                                               placeholder="Введите Ваш e-mail">
+                                                </div>
+                                            </div>
+                                            <div class="field">
+                                                <label class="field-title" for="captcha">Код на картинке</label>
+                                                <div class="form-input"><input type="text" id="captcha"
+                                                                               name="captcha_word"
+                                                                               maxlength="50"
+                                                                               placeholder="Введите код с картинки">
+                                                    <div style="margin-top:-10px;margin-right:-15px;">
+                                                        <img src="images/captcha.jpg" width="180" height="40"
+                                                             alt="CAPTCHA"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="field field-button text-center field-button-block">
+                                                <input type="submit" class="input-submit main__info-block-button"
+                                                       name="Register"
+                                                       value="Зарегистрироваться как ученик">
+                                            </div>
+                                        </form>
+
+                                    </div>
                                 </div>
-                            </form>
+                            </div>
+                            <div id="panel2" class="tab-pane fade padding-top">
+                                <div class="col-xs-12 col-sm-12 col-md-12 login-form register-form">
+                                    <div class="fields">
+
+                                        <form method="post" action="" name="regform">
+
+                                            <div class="field">
+                                                <label class="field-title" for="REGISTER">Логин</label>
+                                                <div class="form-input">
+                                                    <input size="30" type="text" id="REGISTER" name="REGISTER[LOGIN]"
+                                                           autocomplete="off" placeholder="Логин должен быть минимум 3 символа">
+                                                </div>
+                                            </div>
+                                            <div class="field">
+                                                <label class="field-title" for="PASSWORD">Пароль</label>
+                                                <div class="form-input">
+                                                    <input size="30" type="password" id="PASSWORD" name="REGISTER[PASSWORD]"
+                                                           autocomplete="off" class="bx-auth-input"
+                                                           placeholder="Пароль должен быть не менее 6 символов длиной.">
+                                                </div>
+                                            </div>
+                                            <div class="field">
+                                                <label class="field-title" for="CONFIRM_PASSWORD">Подтверждение пароля</label>
+                                                <div class="form-input">
+                                                    <input size="30" type="password" id="CONFIRM_PASSWORD"
+                                                           name="REGISTER[CONFIRM_PASSWORD]" autocomplete="off"
+                                                           placeholder="Повторите Ваш пароль">
+                                                </div>
+                                            </div>
+                                            <div class="field">
+                                                <label class="field-title" for="EMAIL">E-mail</label>
+                                                <div class="form-input">
+                                                    <input size="30" type="text" id="EMAIL" name="REGISTER[EMAIL]"
+                                                           autocomplete="off" placeholder="Введите Ваш e-mail">
+                                                </div>
+                                            </div>
+                                            <div class="field">
+                                                <label class="field-title" for="NAME">Имя</label>
+                                                <div class="form-input">
+                                                    <input size="30" type="text" id="NAME" name="REGISTER[NAME]" autocomplete="off"
+                                                           placeholder="Имя">
+                                                </div>
+                                            </div>
+                                            <div class="field">
+                                                <label class="field-title" for="LAST_NAME">Фамилия</label>
+                                                <div class="form-input">
+                                                    <input size="30" type="text" id="LAST_NAME" name="REGISTER[LAST_NAME]"
+                                                           autocomplete="off" placeholder="Фамилия">
+                                                </div>
+                                            </div>
+                                            <div class="field">
+                                                <label class="field-title" for="PERSONAL_BIRTHDAY">Дата рождения</label>
+                                                <div class="form-input">
+                                                    <input size="30" type="text" id="PERSONAL_BIRTHDAY"
+                                                           name="REGISTER[PERSONAL_BIRTHDAY]" autocomplete="off"
+                                                           placeholder="Дата рождения"></div>
+                                            </div>
+                                            <div class="field">
+                                                <label class="field-title" for="UF_TYPE_USER">Тип регистрации</label>
+                                                <div class="form-input">
+                                                    <select id="UF_TYPE_USER" class="bx-user-field-enum" name="UF_TYPE_USER">
+                                                        <option value="8" selected="">Выберите одно из значений</option>
+                                                        <option value="3">Репетитор</option>
+                                                        <option value="4">Тренер</option>
+                                                        <option value="6">Инструктор</option>
+                                                        <option value="5">Няня</option>
+                                                        <option value="7">Логопед</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="field">
+                                                <label class="field-title" for="captcha_word">Введите слово на картинке</label>
+                                                <div class="form-input">
+                                                    <input type="text" id="captcha_word" name="captcha_word" maxlength="50" value=""
+                                                           placeholder="Введите код с картинки">
+                                                    <div style="margin-top:-10px;margin-right:-15px;">
+                                                        <img src="images/captcha.jpg" width="180" height="40" alt="CAPTCHA">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="field field-button text-center field-button-block">
+                                                <input type="submit" class="input-submit main__info-block-button"
+                                                       name="register_submit_button" value="Зарегистрироваться как репетитор">
+                                            </div>
+
+                                        </form>
+
+                                    </div>
+                                </div>
+                            </div>
 
                         </div>
+
                     </div>
                 </div>
 
-                <h2 class="text-center">Регистрация репетитора</h2>
-                <div class="col-xs-12 main__about main__about-block">
-                    <div class="col-xs-12 col-sm-12 col-md-12 main__about-description login-form register-form">
-                        <div class="fields">
-
-                            <form method="post" action="" name="regform">
-
-                                <div class="field">
-                                    <label class="field-title" for="REGISTER">Логин</label>
-                                    <div class="form-input">
-                                        <input size="30" type="text" id="REGISTER" name="REGISTER[LOGIN]"
-                                               autocomplete="off" placeholder="Логин должен быть минимум 3 символа">
-                                    </div>
-                                </div>
-                                <div class="field">
-                                    <label class="field-title" for="PASSWORD">Пароль</label>
-                                    <div class="form-input">
-                                        <input size="30" type="password" id="PASSWORD" name="REGISTER[PASSWORD]"
-                                               autocomplete="off" class="bx-auth-input"
-                                               placeholder="Пароль должен быть не менее 6 символов длиной.">
-                                    </div>
-                                </div>
-                                <div class="field">
-                                    <label class="field-title" for="CONFIRM_PASSWORD">Подтверждение пароля</label>
-                                    <div class="form-input">
-                                        <input size="30" type="password" id="CONFIRM_PASSWORD"
-                                               name="REGISTER[CONFIRM_PASSWORD]" autocomplete="off"
-                                               placeholder="Повторите Ваш пароль">
-                                    </div>
-                                </div>
-                                <div class="field">
-                                    <label class="field-title" for="EMAIL">E-mail</label>
-                                    <div class="form-input">
-                                        <input size="30" type="text" id="EMAIL" name="REGISTER[EMAIL]"
-                                               autocomplete="off" placeholder="Введите Ваш e-mail">
-                                    </div>
-                                </div>
-                                <div class="field">
-                                    <label class="field-title" for="NAME">Имя</label>
-                                    <div class="form-input">
-                                        <input size="30" type="text" id="NAME" name="REGISTER[NAME]" autocomplete="off"
-                                               placeholder="Имя">
-                                    </div>
-                                </div>
-                                <div class="field">
-                                    <label class="field-title" for="LAST_NAME">Фамилия</label>
-                                    <div class="form-input">
-                                        <input size="30" type="text" id="LAST_NAME" name="REGISTER[LAST_NAME]"
-                                               autocomplete="off" placeholder="Фамилия">
-                                    </div>
-                                </div>
-                                <div class="field">
-                                    <label class="field-title" for="PERSONAL_BIRTHDAY">Дата рождения</label>
-                                    <div class="form-input">
-                                        <input size="30" type="text" id="PERSONAL_BIRTHDAY"
-                                               name="REGISTER[PERSONAL_BIRTHDAY]" autocomplete="off"
-                                               placeholder="Дата рождения"></div>
-                                </div>
-                                <div class="field">
-                                    <label class="field-title" for="UF_TYPE_USER">Тип регистрации</label>
-                                    <div class="form-input">
-                                        <select id="UF_TYPE_USER" class="bx-user-field-enum" name="UF_TYPE_USER">
-                                            <option value="8" selected="">Выберите одно из значений</option>
-                                            <option value="3">Репетитор</option>
-                                            <option value="4">Тренер</option>
-                                            <option value="6">Инструктор</option>
-                                            <option value="5">Няня</option>
-                                            <option value="7">Логопед</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="field">
-                                    <label class="field-title" for="captcha_word">Введите слово на картинке</label>
-                                    <div class="form-input">
-                                        <input type="text" id="captcha_word" name="captcha_word" maxlength="50" value=""
-                                               placeholder="Введите код с картинки">
-                                        <div style="margin-top:-10px;margin-right:-15px;">
-                                            <img src="images/captcha.jpg" width="180" height="40" alt="CAPTCHA">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="field field-button text-center field-button-block">
-                                    <input type="submit" class="input-submit main__info-block-button" name="register_submit_button" value="Зарегистрироваться как репетитор">
-                                </div>
-
-                            </form>
-
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
 

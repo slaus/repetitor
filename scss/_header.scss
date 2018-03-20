@@ -89,6 +89,7 @@
       }
       & h2 b {
         font-size: 76px;
+        color: rgb(10, 123, 130);
 
         @media screen and (max-width: 1139px) {
           font-size: 70px;
@@ -143,16 +144,29 @@
   }
   &__menu {
     //height: 64px;
-    background-color: rgba(18, 152, 160, 0.7);
+    background-color: rgba(18, 152, 160, 1);
     position: absolute;
-    bottom: 0;
+    //bottom: 0;
+    top: 42px;
     width: 100%;
     height: fit-content;
+
+    @media screen and (max-width: 499px) {
+      top: 82px;
+    }
 
     & ul {
       text-align: center;
 
       & li {
+        @media screen and (max-width: 949px) {
+          width: 49%;
+          display: inline-block;
+        }
+        @media screen and (max-width: 767px) {
+          width: 100%;
+          display: block;
+        }
 
         & a {
           color: white;
@@ -163,9 +177,13 @@
           line-height: 64px;
           display: inline-block;
 
+          @media screen and (max-width: 949px) {
+            line-height: 44px;
+          }
+
           &:hover {
             text-decoration: none;
-            background-color: rgba(18, 152, 160, 0.7);
+            background-color: rgb(10, 123, 130);
           }
         }
       }
@@ -185,6 +203,7 @@
 
     @media screen and (max-width: 767px) {
       padding: 0;
+      height: 44px;
     }
   }
 
@@ -209,8 +228,19 @@
     font-size: 18px;
     text-transform: uppercase;
 
+    @media screen and (max-width: 767px) {
+      height: 44px;
+    }
+    @media screen and (max-width: 499px) {
+      width: 100px;
+    }
+
     & i {
       margin-left: 20px;
+
+      @media screen and (max-width: 499px) {
+        display: none;
+      }
     }
   }
 }

@@ -117,6 +117,10 @@
     margin-bottom: 20px;
     padding-left: 10%;
     padding-right: 10%;
+
+    @media screen and (max-width: 767px) {
+      font-size: 25px;
+    }
   }
 
   & .main__info-block {
@@ -126,6 +130,10 @@
 
     &.no-icons {
       padding-left: 80px;
+
+      @media screen and (max-width: 499px) {
+        padding-left: 20px;
+      }
     }
 
     &-button {
@@ -161,6 +169,7 @@
 
       @media screen and (max-width: 499px) {
         padding-right: 20px;
+        width: 100%;
       }
     }
 
@@ -168,6 +177,14 @@
       width: 30px;
       height: 30px;
       display: inline-block;
+
+      @media screen and (max-width: 499px) {
+        display: none;
+      }
+    }
+    & .register-form img {
+      width: inherit;
+      height: inherit;
     }
   }
 
@@ -636,6 +653,10 @@
       box-shadow: 0 1px 12px rgba(47, 47, 47, 0.15);
       margin: 0 5px;
 
+      @media screen and (max-width: 499px) {
+        padding: 30px 50px 10px 50px;
+      }
+
       & .photo {
         width: 115px;
         height: 115px;
@@ -772,7 +793,7 @@
     width: 100px;
     height: 100px;
     margin: 5px;
-    border-radius: 50%;
+    border-radius: 6зч;
     -moz-transition: all .5s ease-out;
     -o-transition: all .5s ease-out;
     -webkit-transition: all .5s ease-out;
